@@ -1,49 +1,25 @@
-java -jar target/QuizMaster-App-0.0.1-SNAPSHOT.jar
-# QuizMaster-App
+# QuizApp
 
-QuizMaster-App is a dynamic quiz application designed to test your knowledge across various topics. It provides an interactive and engaging learning experience for users of all ages. The app is easy to use, responsive, and designed with scalability in mind.
-
----
+A web-based quiz application built with Spring Boot, JPA, and MySQL. Supports multiple quizzes, categories, and automatic scoring of multiple-choice questions via a REST API.
 
 ## Features
-
-- **Multiple-choice quizzes:** Users can answer multiple-choice questions in different categories.
-- **Instant feedback:** Get immediate results for each question.
-- **Score tracking:** See your total score at the end of each quiz.
-- **Responsive UI:** Works seamlessly on desktops, tablets, and mobile devices.
-- **Extensible:** Easily add new quizzes or topics.
-- **User-friendly interface:** Minimalist and intuitive design for smooth navigation.
-
----
+- Create and manage quizzes
+- Multiple question categories
+- Automatic scoring
+- REST API for submissions
+- Persistent data with MySQL
 
 ## Tech Stack
+- Spring Boot
+- Hibernate/JPA
+- MySQL
+- Maven
 
-- **Frontend:** HTML, CSS, JavaScript (or React if applicable)
-- **Backend (if any):** Node.js, Express.js
-- **Database (if any):** MongoDB / Firebase / LocalStorage
-- **Version Control:** Git & GitHub
+## How to Run
+1. Clone the repo: `git clone <repo-url>`
+2. Configure MySQL datasource in `application.properties`
+3. Build and run: `mvn spring-boot:run`
+4. Access API at: `http://localhost:8080`
 
-> Adjust the stack according to what your app actually uses.
-
----
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/VyshrawanP/QuizMaster-App.git
-java -version
-mvn -version
-mvn clean install
-mvn spring-boot:run
-java -jar target/QuizMaster-App-0.0.1-SNAPSHOT.jar
-
-from applications properties
-spring.datasource.url=jdbc:mysql://localhost:3306/quizdb
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-server.port=8080
-
-spring.datasource.username=${DB_USERNAME}
-spring.datasource.password=${DB_PASSWORD}
-
+## Author
+VyshrawanP
